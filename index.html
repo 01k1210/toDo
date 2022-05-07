@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Список Дел</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <form name="tasks" novalidate>
+            <span></span>
+            <div>
+                <p>Название задачи</p>
+                <input name="name" type="text" placeholder="Введите название задачи" required minlength="3" maxlength="20" required autocomplete="off">
+                <span></span>
+            </div>
+            <div>
+                <p>Описание задачи</p>
+                <textarea name="description"   placeholder="Введите описание задачи" required minlength="3"></textarea>
+                <span></span>
+            </div>
+            <div>
+                <p>Срок выполнения</p>
+                <input name="date" type="date" required>
+                <span></span>
+            </div>
+            <div>
+                <button class="addUs">Добавить участника</button>
+                <button type="submit">Отправить</button>
+            </div>
+            <a class="link" target="_blank" href="index_out.html">Открыть список задач</a>
+        </form>
+    <script src="script.js"></script>
+</body>
+</html>

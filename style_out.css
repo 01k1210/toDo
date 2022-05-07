@@ -1,0 +1,20 @@
+.wrap_out{
+    margin: 0 auto;
+    max-width: 800px;
+}
+.inner{
+    background-color: aqua;
+    padding: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+    margin-top: 10px;
+}
+@media (max-width: 481px) {
+    .inner{
+        padding: 10px;
+        font-size: 16px;
+    }
+}
+.checked{
+    background-color: rgb(129, 217, 217);
+}

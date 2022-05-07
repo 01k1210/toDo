@@ -1,0 +1,84 @@
+body{
+    box-sizing: border-box;
+}
+
+form{
+    background-color: aqua;
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 20px;
+}
+@media (max-width: 481px) {
+    form{
+        height: 100vh;
+    }
+}
+form div{
+    display: flex;
+    text-align: center;
+    margin-bottom: 10px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+@media (max-width: 481px) {
+    form div{
+        flex-direction: column;
+    }
+}
+form input{
+    width: 100%;
+}
+
+div p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    flex: 1;
+}
+div input{
+    flex: 2;
+}
+div textarea{
+    flex: 2;
+    resize: none;
+}
+@media (max-width: 481px) {
+    div textarea{
+    width: 100%;
+    }
+}
+div span{
+    flex-basis: 100%;
+    color: red;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+}
+div:nth-child(5){
+    justify-content: center;
+}
+.addUs{
+    margin-right: 5px;
+}
+@media (max-width: 481px) {
+    .addUs{
+        margin-bottom: 5px;
+    }
+}
+.link{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+.link:hover{
+    color: red;
+}
+.users_tab{
+    margin-left: 2px;
+}
+@media (max-width: 481px) {
+    .users_tab{
+        width: 100%;
+        flex-direction: row;
+    }
+}
